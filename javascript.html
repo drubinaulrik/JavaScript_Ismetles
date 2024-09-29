@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javascript.css">
+    <script src="javascript.js"></script>
+    <title>JavaScript Ismétlés</title>
+</head>
+<body>
+    <h1>1. feladat</h1>
+    <p>Téglatest Számítás</p>
+    <label for="hossz">Hosszúság:</label>
+    <input type="number" id="hossz" step="0.1"><br>
+    <label for="szelesseg">Szélesség:</label>
+    <input type="number" id="szelesseg" step="0.1"><br>
+    <label for="magassag">Magasság:</label>
+    <input type="number" id="magassag" step="0.1"><br>
+    <button onclick="szamitas()">Számítás</button>
+    <p>Felszín: <span id="felszin"></span></p>
+    <p>Térfogat: <span id="terfogat"></span></p>
+
+    <h1>2. feladat</h1>
+    <p>Hátralévő másodpercek kiszámítása</p>
+    <button onclick="szamitasMasodpercek()">Számítás</button>
+    <p>Hátralévő másodpercek: <span id="hatralevoMasodpercek"></span></p>
+
+    <h1>3. feladat</h1>
+    <p>Testtömegindex (BMI) kiszámítása</p>
+    <label for="tomeg">Tömeg (kg):</label>
+    <input type="number" id="tomeg" step="0.1"><br>
+    <label for="magassagBMI">Magasság (m):</label>
+    <input type="number" id="magassagBMI" step="0.01"><br>
+    <button onclick="szamitasBMI()">Számítás</button>
+    <p>BMI: <span id="bmi"></span></p>
+
+    <h1>4. feladat</h1>
+    <p>Osztályzat kiszámítása</p>
+    <label for="pontszam">Pontszám:</label>
+    <input type="number" id="pontszam" step="1"><br>
+    <button onclick="szamitasOsztalyzat()">Számítás</button>
+    <p>Osztályzat: <span id="osztalyzat"></span></p>
+
+    <h1>5. feladat</h1>
+    <p>Szökőév ellenőrzése</p>
+    <label for="ev">Év:</label>
+    <input type="number" id="ev" step="1"><br>
+    <button onclick="ellenorizSzokoev()">Ellenőrzés</button>
+    <p>Szökőév: <span id="eredmeny"></span></p>
+
+    <h1>6. feladat</h1>
+    <p>Kő, papír, olló játék</p>
+    <label for="jatekos1">1. játékos választása (1: kő, 2: papír, 3: olló):</label>
+    <input type="number" id="jatekos1" step="1" min="1" max="3"><br>
+    <label for="jatekos2">2. játékos választása (1: kő, 2: papír, 3: olló):</label>
+    <input type="number" id="jatekos2" step="1" min="1" max="3"><br>
+    <button onclick="jatek()">Eredmény</button>
+    <p>Eredmény: <span id="eredmenyJatek"></span></p>
+
+    <h1>7. feladat</h1>
+    <p>Betűk kiíratása egy stringből</p>
+    <label for="szoveg">Szöveg:</label>
+    <input type="text" id="szoveg"><br>
+    <button onclick="kiirBetuk()">Kiíratás</button>
+    <p>Betűk:</p>
+    <pre id="betuk"></pre>
+    
+    <h1>8. feladat</h1>
+    <p>Faktoriális számítása</p>
+    <label for="szam">Szám:</label>
+    <input type="number" id="szam" step="1"><br>
+    <button onclick="szamitasFaktorialis()">Számítás</button>
+    <p>Faktoriális: <span id="faktorialis"></span></p>
+
+    <h1>9. feladat</h1>
+    <p>Számjegyek átlagának kiszámítása</p>
+    <label for="szam">Szám:</label>
+    <input type="number" id="szam"><br>
+    <button onclick="szamjegyAtlag()">Számítás</button>
+    <p>Átlag: <span id="atlag"></span></p>
+    
+    <h1>10. feladat</h1>
+    <p>Négyzet rajzolása</p>
+    <label for="meret">Négyzet mérete:</label>
+    <input type="number" id="meret"><br>
+    <button onclick="negyzetRajzolas()">Rajzolás</button>
+    <pre id="negyzet"></pre>
+
+    <h1>11. feladat</h1>
+    <p>Betűk kiírása</p>
+    <label for="szoveg">Szöveg:</label>
+    <input type="text" id="szoveg"><br>
+    <button onclick="betuKiiras()">Kiírás</button>
+    <p>Betűk: <span id="betuk"></span></p>
+
+    <h1>12. feladat</h1>
+    <p>Számok kiíratása 1-től 100-ig, de a 3-mal osztható számok kihagyásával</p>
+    <button onclick="szamokKiirasa()">Kiíratás</button>
+    <pre id="szamok"></pre>
+
+    <h1>13. feladat</h1>
+    <p>Számok osztóinak kiíratása 10-től 30-ig</p>
+    <button onclick="kiirOsztok()">Kiíratás</button>
+    <pre id="osztok"></pre>
+
+    <h1>14. feladat</h1>
+    <button onclick="fizzBuzz()">Kiíratás</button>
+    <pre id="kimenet"></pre>
+
+</body>
+</html>
